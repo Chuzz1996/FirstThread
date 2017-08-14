@@ -11,4 +11,19 @@ package edu.eci.arsw.threads;
  */
 public class CountThread {
     
+    public int ini;
+    public int fin;
+    
+    public CountThread(int ini, int fin){
+        this.ini = ini;
+        this.fin = fin;
+    }
+    
+    @Override
+    public void run(){
+        for(int i = ini; i < fin; i++){
+            System.out.println(i);
+        }
+    }
+
 }
