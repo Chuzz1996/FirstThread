@@ -9,7 +9,7 @@ package edu.eci.arsw.math;
  *
  * @author pipe
  */
-public class ThreadLive {
+public class ThreadLive extends Thread{
     private int start;
     private int count;
     private static int DigitsPerSum = 8;
